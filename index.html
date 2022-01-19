@@ -13,50 +13,32 @@
       <ul>
         <li data-tab-target="#list1">
           <a href="#">
-            <!-- <span class="icon"><ion-icon name="logo-apple"></ion-icon></span> -->
-            <span class="title">지알이시스템</span>
+            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+            <span class="title">GRE System<span class="account">(황정수님)</span></span>
           </a>
         </li>
         <li data-tab-target="#list2">
           <a href="#">
-            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-            <span class="title">Dashboard</span>
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="title">회원정보</span>
           </a>
         </li>
         <li data-tab-target="#list3">
           <a href="#">
-            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-            <span class="title">Customers</span>
+            <span class="icon"><ion-icon name="battery-charging-outline"></ion-icon></span>
+            <span class="title">충전내역</span>
           </a>
         </li>
         <li data-tab-target="#list4">
           <a href="#">
-            <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
-            <span class="title">Message</span>
+            <span class="icon"><ion-icon name="id-card-outline"></ion-icon></span>
+            <span class="title">회원정보관리</span>
           </a>
         </li>
         <li data-tab-target="#list5">
           <a href="#">
             <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
-            <span class="title">Help</span>
-          </a>
-        </li>
-        <li data-tab-target="#list6">
-          <a href="#">
-            <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-            <span class="title">Settings</span>
-          </a>
-        </li>
-        <li data-tab-target="#list7">
-          <a href="#">
-            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-            <span class="title">Password</span>
-          </a>
-        </li>
-        <li data-tab-target="#list8">
-          <a href="#">
-            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-            <span class="title">Sign Out</span>
+            <span class="title">고객지원</span>
           </a>
         </li>
       </ul>
@@ -90,8 +72,10 @@
           <div class="cardBox">
             <div class="card">
               <div>
-                <div class="numbers">1,504</div>
-                <div class="cardName">Daily Views</div>
+                <div class="cardName">현재 충전상태</div>
+                <div class="numbers">충전 중</div>
+                <div class="numbers">충전장소 힉스유타워</div>
+                <div class="numbers">충전시작 15시23분</div>
               </div>
               <div class="iconBx">
                 <ion-icon name="eye-outline"></ion-icon>
@@ -99,8 +83,10 @@
             </div>
             <div class="card">
               <div>
-                <div class="numbers">80</div>
-                <div class="cardName">Sales</div>
+                <div class="cardName">현재 크래딧 현황</div>
+                <div class="numbers">현재 8,000 포인트</div>
+                <div class="numbers"><a href="#" class="btn">크래딧충전바로가기</a></div>
+                
               </div>
               <div class="iconBx">
                 <ion-icon name="cart-outline"></ion-icon>
@@ -108,8 +94,10 @@
             </div>
             <div class="card">
               <div>
-                <div class="numbers">284</div>
-                <div class="cardName">Comments</div>
+                <div class="cardName">회원통계</div>
+                <div class="numbers">회원가입: 2021. 10. 02</div>
+                <div class="numbers">누적크래딧: 45,000</div>
+                <div class="numbers">누적충전량: 450kWh</div>
               </div>
               <div class="iconBx">
                 <ion-icon name="chatbubbles-outline"></ion-icon>
@@ -117,8 +105,9 @@
             </div>
             <div class="card">
               <div>
-                <div class="numbers">$7,842</div>
-                <div class="cardName">Earnings</div>
+                <div class="cardName">자주가는 충전소</div>
+                <div class="numbers">힉스유타워</div>
+                <div class="numbers">코엑스몰</div>
               </div>
               <div class="iconBx">
                 <ion-icon name="cash-outline"></ion-icon>
@@ -129,42 +118,47 @@
           <div class="details">
             <div class="recentOrders">
               <div class="cardHeader">
-                <h2>Recent Orders</h2>
-                <a href="#" class="btn">View All</a>
+                <h2>최근 충전내역</h2>
+                <a href="#" class="btn">모두 보기</a>
               </div>
               <table>
                 <thead>
                   <tr>
-                    <td>Name</td>
-                    <td>Price</td>
-                    <td>Payment</td>
-                    <td>Status</td>
+                    <td>충전소명</td>
+                    <td>충전기</td>
+                    <td>충전량</td>
+                    <td>충전금액</td>
+                    <td>충전기상태</td>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Star Refrigerator</td>
-                    <td>$1200</td>
-                    <td>Paid</td>
-                    <td><span class="status delivered">Delivered</span></td>
+                    <td>기흥힉스유타워</td>
+                    <td>GRE10001</td>
+                    <td>15kWh</td>
+                    <td>3,000원</td>
+                    <td><span class="status delivered">충전가능</span></td>
                   </tr>
                   <tr>
-                    <td>Window Coolers</td>
-                    <td>$110</td>
-                    <td>Due</td>
-                    <td><span class="status pending">Pending</span></td>
+                    <td>서울역롯데마트</td>
+                    <td>GRE12406</td>
+                    <td>9kWh</td>
+                    <td>1,800원</td>
+                    <td><span class="status pending">충전 중</span></td>
                   </tr>
                   <tr>
-                    <td>Speakers</td>
-                    <td>$620</td>
-                    <td>Paid</td>
-                    <td><span class="status return">Return</span></td>
+                    <td>코엑스몰</td>
+                    <td>GRE13562</td>
+                    <td>10kWh</td>
+                    <td>2,000원</td>
+                    <td><span class="status return">장애</span></td>
                   </tr>
                   <tr>
-                    <td>HP Laptop</td>
-                    <td>$110</td>
-                    <td>Due</td>
-                    <td><span class="status inprogress">In Progress</span></td>
+                    <td>개포자이아파트</td>
+                    <td>GRE11438</td>
+                    <td>18kWh</td>
+                    <td>3,600원</td>
+                    <td><span class="status inprogress">통신장애</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -172,21 +166,38 @@
             <!-- New Customers -->
             <div class="recentCustomers">
               <div class="cardHeader">
-                <h2>Recent Customers</h2>
+                <h2>회원카드 조회</h2>
+                <a href="#" class="btn">발급/삭제</a>
               </div>
               <table>
-                <tr>
-                  <td width="60px"><div class="imgBx"><img src="./images/img1.jpg" /></div></td>
-                  <td><h4>Hyeri<br/><span>Korea</span></h4></td>
-                </tr>
-                <tr>
-                  <td width="60px"><div class="imgBx"><img src="./images/img2.jpg" /></div></td>
-                  <td><h4>Ariana<br/><span>USA</span></h4></td>
-                </tr>
-                <tr>
-                  <td width="60px"><div class="imgBx"><img src="./images/img3.jpg" /></div></td>
-                  <td><h4>Sakura<br/><span>Japan</span></h4></td>
-                </tr>
+                <thead>
+                  <tr>
+                    <td>카드번호</td>
+                    <td>카드유형</td>
+                    <td>발급일자</td>
+                    <td>카드상태</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1010010134562345</td>
+                    <td>환경부카드</td>
+                    <td>2021. 10. 05</td>
+                    <td><span class="status pending">휴지</span></td>
+                  </tr>
+                  <tr>
+                    <td>C123498763456</td>
+                    <td>삼성카드</td>
+                    <td>2021. 12. 17</td>
+                    <td><span class="status delivered">정상</span></td>
+                  </tr>
+                  <tr>
+                    <td>HFC23455667</td>
+                    <td>삼성갤럭시</td>
+                    <td>2022. 01. 13</td>
+                    <td><span class="status delivered">정상</span></td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

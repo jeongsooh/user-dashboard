@@ -54,7 +54,12 @@ body {
 .navigation ul li:nth-child(1) {
   margin-bottom: 40px;
   pointer-events: none;
-  font-size: 1.7rem;
+}
+.navigation ul li:nth-child(1) .title {
+  font-size: 1.2rem;
+}
+.navigation ul li:nth-child(1) .account {
+  font-size: 1rem;
 }
 .navigation ul li a {
   position: relative;
@@ -212,17 +217,23 @@ body {
 .cardBox .card .numbers {
   position: relative;
   font-weight: 500;
-  font-size: 2.5em;
+  font-size: 1.2em;
   color: var(--blue);
+  margin-top: 10px;
+
 }
 .cardBox .card .cardName {
   color: var(--black2);
-  font-size: 1.1em;
+  font-size: 1.5em;
   margin-top: 5px;
+  position: absolute;
+  top: 0;
+  left:1rem;
 }
 .cardBox .card .iconBx {
   font-size: 3.5em;
   color: var(--black2);
+  display: none;
 }
 .cardBox .card:hover {
   background: var(--primary-gre);
@@ -275,7 +286,7 @@ body {
   padding: 20px;
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .details table {
   width: 100%;
