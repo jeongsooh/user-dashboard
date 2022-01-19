@@ -411,7 +411,7 @@ body {
   .main.active {
     left: 300px;
   }
-  .cardBox {
+  .content .items .cardBox {
     grid-template-columns: repeat(2,1fr);
   }
 }
@@ -427,7 +427,7 @@ body {
   }
 }
 @media (max-width: 480px) {
-  .cardBox {
+  .content .items .cardBox {
     grid-template-columns: repeat(1,1fr);
   }
   .cardHeader h2 {
